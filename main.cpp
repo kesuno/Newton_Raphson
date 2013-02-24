@@ -1,7 +1,7 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  Newton-Raphson–@
-  ³”N‚Ì•½•ûª(N^(1/2))‚Ì‹ß—’l‚ğ‹‚ß‚é‚½‚ßA
-  F(X)=X^2-N‚Æ‚µ‚ÄF(X)=0‚ğ–‘«‚·‚éX‚ğNewton-Raphson–@‚Å‹‚ß‚éB
+  Newton-Raphsonæ³•
+  æ­£æ•°Nã®å¹³æ–¹æ ¹(N^(1/2))ã®è¿‘ä¼¼å€¤ã‚’æ±‚ã‚ã‚‹ãŸã‚ã€
+  F(X)=X^2-Nã¨ã—ã¦F(X)=0ã‚’æº€è¶³ã™ã‚‹Xã‚’Newton-Raphsonæ³•ã§æ±‚ã‚ã‚‹ã€‚
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #include <iostream>
 #include <iomanip>
@@ -16,7 +16,7 @@ int main(int argc,char *argv[]) {
 	double N;
 
 	if(argc < 2){
-		cout<<"g—p•û–@:"<<argv[0]<<" <”’l>"<<endl;
+		cout<<"ä½¿ç”¨æ–¹æ³•:"<<argv[0]<<" <æ•°å€¤>"<<endl;
 		exit(0);
 	}else{
 		N = atoi(argv[1]);
@@ -29,7 +29,7 @@ int main(int argc,char *argv[]) {
 		X1 = (X0 / 2) + (N / (2 * X0));
 	}while(abs(X0-X1) >= numeric_limits<double>::epsilon());
 	
-	cout << "ƒ‹[ƒg" << N << " : " << fixed << setprecision(55) << X1 << endl;
+	cout << "ãƒ«ãƒ¼ãƒˆ" << N << " : " << fixed << setprecision(55) << X1 << endl;
 	
 	return 0;
 }
